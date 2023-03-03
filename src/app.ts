@@ -21,7 +21,7 @@ class App {
   }
 
   setRoutes(api: Router) {
-    this.app.use();
+    this.app.use(this.rootApiPath, api);
   }
 
   express() {
